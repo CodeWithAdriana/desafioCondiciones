@@ -5,8 +5,9 @@
 body{
     background-color: bisque;
 }
-
+/* primer problema */
 .problema-1 h2{
+    margin-top: 16px;
     text-align: center;    
 }
 
@@ -14,7 +15,76 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: none;
+    margin-bottom: 27px;
 }
+
+/* Segundo problema */
+.stickers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title-sticker {
+    text-align: center;
+    width: 100%; 
+    margin-bottom: 52px; 
+}
+
+.stickers-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sticker-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.sticker-item img {
+    width: 100px; 
+    margin-bottom: 10px; 
+}
+
+.button-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+/* Tercer problema  */
+.passw-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.passw-container h2{
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 10px; 
+}
+
+.digits-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.mensaje{
+    font-size: large;
+    margin-bottom: 20px;
+
+}
+
+
 
 

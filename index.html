@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagen-Unica</title>
+    <title>Condiciones</title>
     <link rel="stylesheet" href="./Asset/CSS/style.css">
 </head>
 
 <body>
-    <!-- Problema 1 -->
+    <!-- Requerimiento 1 -->
     <div class="problema-1">
-        <h2>Requerimiento 1: Borde de Imagen</h2>
-        <img src="./Asset/img/Imagen-borde.png" alt="Borde" class="imagen"
-        onclick="
+        <h2>Borde de Imagen</h2>
+        <img src="./Asset/img/Imagen-borde.png" alt="Borde" class="imagen" onclick="
         imagen = document.querySelector('.imagen')
         if(activo===false) {
             imagen.style.border='2px solid red';
@@ -26,11 +25,79 @@
         ">
     </div>
 
+    <!-- Requerimiento 2 -->
 
-   
-    
-    
-        <script src="./Asset/JavaScript/script.js"></script>
-    
-    </body>
-    </html>
+    <div class="stickers-container">
+
+        <h2 class="title-sticker">Selección de Stickers</h2>
+        <div class="stickers-row">
+            <div class="sticker-item">
+                <img src="Asset/img/Stiker1.png" alt="Sticker 1">
+                <input type="number" id="sticker1" min="0" max="10" value="0">
+            </div>
+            <div class="sticker-item">
+                <img src="Asset/img/Stiker 2.png" alt="Sticker 2">
+                <input type="number" id="sticker2" min="0" max="10" value="0">
+            </div>
+            <div class="sticker-item">
+                <img src="Asset/img/Stiker 3.png" alt="Sticker 3">
+                <input type="number" id="sticker3" min="0" max="10" value="0">
+            </div>
+            <div class="button-conteiner">
+                <button onclick="calcularStickers()">Verificar</button>
+                <p id="mensajeStickers"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Requerimiento 3 -->
+    <div class="passw-container">
+        <h2>Contraseña</h2>
+        <div class="digits-row">
+            <select class="primero" id="digito1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select class="primero" id="digito2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select class="primero" id="digito3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <button onclick="verificarContrasena()">Ingresar</button>
+
+        <p class="mensaje">
+
+        </p>
+    </div>
+
+    <script src="./Asset/JavaScript/script.js"></script>
+
+</body>
+
+</html>
